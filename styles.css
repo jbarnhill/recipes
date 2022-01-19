@@ -4,7 +4,14 @@
     margin: auto;
     background-color: #E4F9F5;
 }
+
+img {
+max-width: 100%;
+height: auto;
+width: auto;
+}
 header, footer {
+    width: 80%
     padding: 1em;
     color: white;
     background-color: #A6CF98;
