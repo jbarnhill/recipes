@@ -1,0 +1,27 @@
+.container {
+    width: 80%;
+    border: none;
+    margin: auto;
+    background-color: #E4F9F5;
+}
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #A6CF98;
+    clear: left;
+    text-align: center;
+}
+.article {
+    padding: 2em;
+    }
+
+hr {
+
+            border-color: #A6CF98;
+            border-width: 2px;
+            width: 100%;
+            }
+body {
+    background-color: #557C55;
+}
+
