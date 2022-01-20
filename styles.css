@@ -22,6 +22,10 @@ height: auto;
 width: auto;
     }
 
+p {
+    padding: 10px;
+}
+
 header {
     width: 80%
     padding: 1em;
@@ -75,4 +79,8 @@ footer {
     background-color: #A6CF98;
     clear: left;
     text-align: center;
+    height: auto;
+    margin: 10px 0 30px 0;
+
+
 }
