@@ -1,16 +1,28 @@
-.container {
-    width: 80%;
-    border: none;
-    margin: auto;
-    background-color: #E4F9F5;
-}
+body {
+    background-color: #557C55;
+    font-family: 'Merriweather', serif;
+    }
+
+hr {
+    border-color: #A6CF98;
+    border-width: 2px;
+    }
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    }
 
 img {
 max-width: 100%;
 height: auto;
 width: auto;
-}
-header, footer {
+    }
+
+header {
     width: 80%
     padding: 1em;
     color: white;
@@ -18,17 +30,49 @@ header, footer {
     clear: left;
     text-align: center;
 }
-.article {
-    padding: 2em;
+
+.container {
+    width: 80%;
+    border: none;
+    margin: auto;
+    background-color: #E4F9F5;
     }
 
-hr {
-
-            border-color: #A6CF98;
-            border-width: 2px;
-            width: 100%;
-            }
-body {
-    background-color: #557C55;
+.weekly {
+    background-color: #E4F9F5;
+    padding: 1em;
 }
 
+.beef {
+    background-color: #DB6B97;
+    padding: 1em;
+}
+
+.chicken {
+    background-color: #FFEEAD;
+    padding: 1em;
+}
+
+.pork {
+    background-color: white;
+    padding: 1em;
+}
+
+.misc {
+    background-color: #FFAD60;
+    padding: 1em;
+}
+
+.holiday {
+    background-color: white;
+    padding: 1em;
+}
+
+footer {
+    width: 80%
+    padding: 1em;
+    color: white;
+    background-color: #A6CF98;
+    clear: left;
+    text-align: center;
+}
