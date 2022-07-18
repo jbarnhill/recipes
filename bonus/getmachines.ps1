@@ -1,1 +1,0 @@
-﻿Get-ADComputer -Filter 'Name -like "qa-app*"' -properties IPv4Address | FT Name >> c:\techops\machines.txt

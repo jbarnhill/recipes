@@ -1,6 +1,0 @@
-target for service was incorrect on one machine
-
-another had typo in the rem'd notes...
-
-could add in a scheduled task to trigger on event fail to force restat with the powershell scripts....it'd just loop nonstop now.
-	did create a tast on 54.176.50.116 with a msg pop up trigger on thisannoyseric service fail for fun

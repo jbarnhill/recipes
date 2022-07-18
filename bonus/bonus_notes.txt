@@ -1,2 +1,0 @@
-getmachines.ps1 to populate machinex.txt with computers matching the "qa-app-##" name format
-restartservice.ps1 to force restart eric service using machine.txt and output results to status.txt...ideally on a share somewhere?
