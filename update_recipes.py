@@ -161,6 +161,19 @@ def main():
                     new_files_added += 1
                     linked_in_recipes.add(filename)
 
+    # 5. Alphabetize all lists in the recipes div
+    if recipes_div:
+        for ul in recipes_div.find_all('ul'):
+            # Get all li items
+            items = ul.find_all('li')
+            # Sort items by the text content (case-insensitive)
+            items.sort(key=lambda li: li.get_text(strip=True).lower())
+            # Clear the current ul
+            ul.clear()
+            # Re-append sorted items
+            for li in items:
+                ul.append(li)
+
     # Save changes
     with open(INDEX_FILE, 'w', encoding='utf-8') as f:
         f.write(soup.prettify())
