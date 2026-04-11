@@ -26,7 +26,25 @@ The project includes a Python-based automation script that maintains the index a
     ```bash
     python update_recipes.py
     ```
-3.  The script will handle the renaming, update `index.html`, and push the changes to GitHub.
+
+## Automated Scheduling (Windows)
+
+To keep your recipe index updated automatically (e.g., every 12 hours), you can set up a Windows Scheduled Task:
+
+1.  **Open Task Scheduler**: Press `Win`, type "Task Scheduler", and press Enter.
+2.  **Create Basic Task**: Click **Create Basic Task...** in the Actions pane.
+    *   **Name**: `Recipe Auto Update`
+    *   **Trigger**: Select **Daily** (set to recur every 1 day).
+    *   **Action**: Select **Start a program**.
+3.  **Configure Action**:
+    *   **Program/script**: `python` (or the full path to your `python.exe`).
+    *   **Add arguments**: `update_recipes.py`
+    *   **Start in**: `S:\ops\recipes` (the full path to this directory).
+4.  **Set 12-Hour Recurrence**:
+    *   After finishing the wizard, find your task in the **Task Scheduler Library**.
+    *   Right-click the task -> **Properties** -> **Triggers** tab -> **Edit**.
+    *   Check **Repeat task every:** and set it to **12 hours**.
+    *   Set **for a duration of:** to **Indefinitely**.
 
 ## Requirements
 *   Python 3.x
